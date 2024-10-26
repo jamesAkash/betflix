@@ -1,9 +1,13 @@
 import React from "react";
+import { CssBaseline, Typography } from "@mui/material";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-slate-400 h-[100vh]">
-      <h1 className="text-4xl bg-yellow-400">Test</h1>
+    <div>
+      <CssBaseline />
+      <Typography variant="h4">Testing CssBaseline</Typography>
+      <Outlet />
     </div>
   );
 }
